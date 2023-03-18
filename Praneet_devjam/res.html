@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clickable Boxes Example</title>
+	<style>
+		body {
+			background-image: url('bckimg.jpeg');
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+		/* .container {
+			opacity: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 600px;
+			width: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #fff;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		} */
+		.box {
+			width: 600px;
+			height: 100px;
+			background-color: #0cd3d6;
+			margin: 30px;
+			border: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 50px;
+			color: #fff;
+			cursor: pointer;
+			border-radius: 15px;
+			border: palevioletred;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box" onclick="window.location.href = 'page1.html';">Box 1</div>
+		<div class="box" onclick="window.location.href = 'page2.html';">Box 2</div>
+		<div class="box" onclick="window.location.href = 'page3.html';">Box 3</div>
+		<div class="box" onclick="window.location.href = 'page4.html';">Box 4</div>
+		<div class="box" onclick="window.location.href = 'page5.html';">Box 5</div>
+	</div>
+</body>
+</html>
