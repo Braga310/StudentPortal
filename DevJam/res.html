@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student's Portal</title>
+	<link rel="icon" type="image/x-icon" href="icon_circle.jpg">
+	<style>
+		body {
+			background-image: url('bckimg.jpeg');
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+		/* .container {
+			opacity: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 600px;
+			width: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #fff;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		} */
+		.box {
+			width: 600px;
+			height: 100px;
+			background:linear-gradient(to right,rgb(0, 140, 255),rgba(237, 11, 128, 0.529));
+			margin: 30px;
+			border: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 50px;
+			color: #fff;
+			cursor: pointer;
+			border-radius: 15px;
+			border: palevioletred;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box" onclick="window.location.href = 'chemistry.html';">Chemistry</div>
+		<div class="box" onclick="window.location.href = 'maths.html';">Maths</div>
+		<div class="box" onclick="window.location.href = 'ds.html';">Data Structures</div>
+		<div class="box" onclick="window.location.href = 'pp.html';">Programming Paradigms</div>
+		<div class="box" onclick="window.location.href = 'ai.html';">Artificial Intelligence</div>
+	</div>
+</body>
+</html>

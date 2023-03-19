@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Side Navigation Bar</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="icon" type="image/x-icon" href="icon_circle.jpg">
+  
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>NAVIGATION</h2>
+        <ul>
+            <li><a href="navigation.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="res.html"><i class="fas fa-user"></i>Attendance</a></li>
+            <li><a href="#"><i class="fas fa-address-card"></i>Result</a></li>
+            <li><a href="#"><i class="fas fa-project-diagram"></i>Repository</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
+            
+        </ul> 
+        <div class="social_media">
+          <a href="https://www.facebook.com/MNNITALLD/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/mnnitalld?lang=en"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/mnnitalld/?hl=en"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header">.</div>  
+        <div class="info">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+</div>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="profilelogo.jpg">
+        </div>
+        <div class="menu">
+            <h3>B.tech<br><span>CSE</span><br><span>2022-2026</span></h3>
+            <ul>
+                <li><ion-icon name="person"></ion-icon><a href="#">My Profile</a></li>
+                <li><ion-icon name="create"></ion-icon><a href="#">Edit Profile</a></li>
+                <li><ion-icon name="mail"></ion-icon><a href="#">Inbox</a></li>
+                <li><ion-icon name="settings"></ion-icon><a href="#">Settings</a></li>
+                <li><ion-icon name="help-circle"></ion-icon><a href="#">Help</a></li>
+                <li><ion-icon name="log-out"></ion-icon><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
