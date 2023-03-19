@@ -2,10 +2,24 @@
 *{
     font-family: "Poppins",sans-serif;
 }
+
+section img{
+    position: absolute;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
+
 table{
     border-collapse: collapse;
     margin: auto;
     padding: auto;
+    /* width: 400px;
+    height: 300px; */
 }
 .container{
     text-align: center;
