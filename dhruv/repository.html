@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="final.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+</head>
+<body>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Repository</h2>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <!-- <div class="sec" id="sec">
+        <h2>Parallax scrolling effects</h2>
+        <p>System software consists of programs that manage the hardware resources of a computer and 
+            perform required information processing tasks. These programs are divided into three classes: 
+            the operating system, system support, and system development.<br><br>System software consists of programs that manage the hardware resources of a computer and 
+            perform required information processing tasks. These programs are divided into three classes: 
+            the operating system, system support, and system development.<br><br>System software consists of programs that manage the hardware resources of a computer and 
+            perform required information processing tasks. These programs are divided into three classes: 
+            the operating system, system support, and system development.</p>
+    </div> -->
+    <div class="container">
+        <div class="box" style="--clr:#89ec5b;">
+            <div class="content">
+                <div class="icon"><ion-icon name="business-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Main Site</h3>
+                    <p>The main academic website of MNNIT,Allahabad.</p>
+                    <a href="https://academics.mnnit.ac.in/new/">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--clr:#eb5ae5;">
+            <div class="content">
+                <div class="icon"><ion-icon name="reader-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Paper Factory</h3>
+                    <p> Exclusively for First Year : By First Year. A paper site for: MNNIT,Allahabad.</p>
+                    <a href="http://paperfactorymnnit.pythonanywhere.com">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--clr:#5b98eb;">
+            <div class="content">
+                <div class="icon"><ion-icon name="construct-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Robotics</h3>
+                    <p>The official site for Robotics Club of MNNIT,Allahabad</p>
+                    <a href="https://roboticsclub.mnnit.ac.in/">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05 + 'px';
+            mountains_behind.style.left = value*0.5 + 'px';
+            mountains_front.style.left = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            // text.style.marginTop = value*1.5 + 'px';
+        })
+    </script>
+</body>
+</html>
