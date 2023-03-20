@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="repo.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+</head>
+<body>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Repository</h2>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="container">
+        <div class="box" style="--clr:#89ec5b;">
+            <div class="content">
+                <div class="icon"><ion-icon name="business-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>MNNIT Main Site</h3>
+                    <p>The main academic website of MNNIT,Allahabad</p>
+                    <a href="https://discord.gg/PKkrNUcPBx">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--clr:#eb5ae5;">
+            <div class="content">
+                <div class="icon"><ion-icon name="reader-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Paper Factory</h3>
+                    <p> Exclusively for First Year : By First Year. A paper site for: MNNIT,Allahabad.</p>
+                    <a href="http://paperfactorymnnit.pythonanywhere.com">Click Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--clr:#5b98eb;">
+            <div class="content">
+                <div class="icon"><ion-icon name="construct-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Robotics</h3>
+                    <p>The official site for Robotics Club of MNNIT,Allahabad</p>
+                    <a href="https://roboticsclub.mnnit.ac.in/">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="box">
+            <div class="content">
+                <img src="code (1).png">
+                <p><a href="https://discord.gg/PKkrNUcPBx">Discord server of CC Club of MNNIT,Allahabad</a></p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="code.png">
+                <p><a href="https://www.facebook.com/groups/ccqueries">MNNIT CC Queries group on Facebook</a></p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="coding.png">
+                <p><a href="https://instagram.com/cc.club.mnnit?igshid=YmMyMTA2M2Y=">Instagram page of CC Club of MNNIT,Allahabad</a></p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="school.png">
+                <p><a href="https://www.youtube.com/@MnnitOfficial">Youtube channel of MNNIT,Allahabad</a></p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="photography.png">
+                <p><a href="https://www.youtube.com/@mediahouseofmnnit1930">Youtube channel of Media House of MNNIT,Allahabad</a></p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="robot.png">
+                <p><a href="https://www.youtube.com/@roboticsclub3742/">Youtube channel of Robotics Club of MNNIT,Allahabad</a></p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="aero.png">
+                <p><a href="https://www.youtube.com/@aeroclubmnnit3964">Youtube channel of Aerodynamics Club of MNNIT,Allahabad</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05 + 'px';
+            mountains_behind.style.left = value*0.5 + 'px';
+            mountains_front.style.left = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            // text.style.marginTop = value*1.5 + 'px';
+        })
+    </script>
+</body>
+</html>

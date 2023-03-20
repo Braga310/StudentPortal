@@ -1,0 +1,104 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-image: url(bckimg.jpeg);
+    background-size: cover ;
+}
+.container{
+    width: 370px;
+    margin: 3.8rem auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(to top,rgb(0, 140, 255),rgba(237, 11, 128, 0.529));
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+.Attendance-container{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+}
+h1{
+    margin: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+.Attendance .mask,
+.Attendance .fill{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.Attendance .mask{
+    clip: rect(0px, 150px, 150px, 75px);  
+}
+.inside-circle{
+    width: 122px;
+    height: 122px;
+    font-size: 5rem;
+    font-weight: 300;
+    position: absolute;
+    background-color: rgb(239, 237, 247);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px 0 0 14px;
+}
+.mask .fill{
+    clip:rect(0px, 75px,150px);
+    background: #e80909;
+    opacity:0.6;
+} 
+.mask.full,
+.Attendance .fill{
+    animation: ease-in-out 5s;
+    transform: rotate(150deg); 
+    
+}
+@keyframes fill{
+    0%{
+        transform: rotate(0deg);
+    }
+}
+.inside-circle span{
+    font-size: 1.2rem;
+    margin-left: 0.2rem; 
+}
+
+.line{
+    margin-top: 3rem;
+    border: 1px solid rgb(216, 216, 216);
+    
+}
+.Attendance-report{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Attendance-report p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.Attendance-report span{
+    color: black;
+    
+}
+.Attendance-report .line{
+    height: 7rem;
+}
+
+.subject{
+    padding-top: 160px;
+    font-size: 25px;
+}
+

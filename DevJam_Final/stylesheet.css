@@ -1,0 +1,46 @@
+body {
+  background-image: url(bckimg.jpeg);
+  background-size: cover;
+  justify-content: center;
+}
+
+.wrapper {
+  color: white;
+  width: 100%;
+}
+
+.form-group {
+  padding-left: 580px;
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+p {
+  padding-left: 580px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+h2 {
+  padding-left: 580px;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.btn {
+  background: linear-gradient(to right, white, blue);
+  height: 40px;
+  width: 80px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+#btn4 {
+  padding-left: 680px;
+}
+.wrapper a {
+  color: brown;
+}
+.wrapper a:hover {
+  color: aquamarine;
+}

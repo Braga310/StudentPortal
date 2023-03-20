@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <title>Drop down menu</title>
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="profilelogo.jpg">
+        </div>
+        <div class="menu">
+            <h3>B.tech<br><span>CSE</span><br><span>2022</span></h3>
+            <ul>
+                <li><ion-icon name="person"></ion-icon><a href="#">My Profile</a></li>
+                <li><ion-icon name="create"></ion-icon><a href="#">Edit Profile</a></li>
+                <li><ion-icon name="mail"></ion-icon><a href="#">Inbox</a></li>
+                <li><ion-icon name="settings"></ion-icon><a href="#">Settings</a></li>
+                <li><ion-icon name="help-circle"></ion-icon><a href="#">Help</a></li>
+                <li><ion-icon name="log-out"></ion-icon><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
