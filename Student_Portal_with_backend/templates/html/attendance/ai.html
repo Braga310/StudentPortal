@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Artificial Intelligence</title>
+    <link rel="icon" type="image/x-icon" href="../../../static/images/icon_circle.jpg">
+    <link rel="stylesheet" href="../../../static/css/attendance.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Attendance Artificial Intelligence</h1>
+    <div class="Attendance-container">
+        <div class="Attendance">
+            <div class="mask full">
+                <div class="fill">
+                </div>
+            </div>
+            <div class="mask half">
+                <div class="fill">
+                </div>
+            </div>
+            <div class="inside-circle">
+                <!-- database link karna hai -->
+                <span>{{attendance}}%</span>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="Attendance-report">
+        <p><span>{{reg}}</span> <!-- database S.No--></p>
+        <div class="line"></div>
+        <p><span>{{names}}</span> <!-- database Name--></p>
+    </div>
+    
+</div>
+</body>
+</html>

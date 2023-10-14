@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000000;
+  margin-top: 0px;
+  padding: 80px;
+  font-size: 100px;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+
+h1:hover {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+}
+
+#logo {
+  position: relative;
+  padding-left: 1300px;
+  padding-top: 10px;
+  opacity: 60%;
+  height: 100px;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.container-main{
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    height:100px;
+    width: 500px;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    background: linear-gradient(lightblue,pink);
+    margin-left: 650px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    
+}
+
+.btn:hover{
+  box-shadow: 0px 0px 10px 10px #f3ecec;
+}
+
+.container{
+  border-right: 5px dotted;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 2s steps(15) infinite,
+    cursor 0.4s  infinite alternate;
+
+}
+
+@keyframes cursor{
+  30% {border-color: transparent}
+
+}
+
+@keyframes typing {
+  from{width:0}
+
+  to{width: 100%}
+
+}
+.container-main h1{
+  color: #fff;
+}

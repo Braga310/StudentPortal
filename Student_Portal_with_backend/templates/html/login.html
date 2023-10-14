@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="../../static/images/icon_circle.png" />
+    <link rel="stylesheet" href="../../static/css/login.css" />
+
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="borderLine"></span>
+      <form id="form" class="form" method="POST">
+        <h2 style="transform: translateY(-15px)">Sign In</h2>
+        <div class="form-control">
+          <label for="username">Registration No.</label>
+          <input
+            name="username"
+            type="text"
+            onkeypress="return onlyNumberKey(event)"
+            maxlength="8"
+            minlength="8"
+            placeholder="20001234"
+            id="username"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="xyz@mnnit.ac.in" id="email" name="email"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input
+            name="password"
+            type="password"
+            minlength="8"
+            placeholder="Password"
+            id="password"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="link">
+          <a href="register.html">New User? Register</a>
+        </div>
+
+        <input
+          type="submit"
+          value="Login"
+        />
+      </form>
+      {% if user == False %}
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>User doesn't exist</small>
+      {% endif %}
+      {% if exist == True %}
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Please enter correct credential</small>
+      {% endif %}
+
+    </div>
+
+    <!-- <script src="login.js"></script> -->
+    <script>
+      function onlyNumberKey(evt) {
+        // Only ASCII character in that range allowed
+        var ASCIICode = evt.which ? evt.which : evt.keyCode;
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) return false;
+        return true;
+      }
+    </script>
+    <script>
+      function detailssubmit() {
+        alert("Your details were Submitted");
+      }
+    </script>
+  </body>
+</html>
