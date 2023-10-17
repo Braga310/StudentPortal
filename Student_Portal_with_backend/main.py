@@ -90,10 +90,13 @@ def login():
                 if request.form["password"] == student["password"] : 
                     found = True
                     global regNo
+                    regNo = ""
                     regNo += student["regNo"]
                     global email
+                    email = ""
                     email += student["email"]
                     global name
+                    name = ""
                     name += email.split(".")[0]
                     return render_template('/html/navigation.html', reg = regNo, emails = email, names = name)
                 else : 
